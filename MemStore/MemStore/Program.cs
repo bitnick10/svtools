@@ -11,8 +11,8 @@ namespace MemStore
         static void Main(string[] args)
         {
             MemStore ms = new MemStore();
-            ms.HDDBName = "hdxx";
-            ms.RAMDBName = "ramxx";
+            ms.HDDBName = "hdins";
+            ms.RAMDBName = "ramins";
             foreach (string id in ms.AllTableNames()) {
                // Console.WriteLine(id);
             }
@@ -20,9 +20,9 @@ namespace MemStore
             while (true) {
                 for (int i = 60; i >= 0; i--)
                 {
-                    System.Threading.Thread.Sleep(60 * 1000);
                     Console.Write(i);
                     Console.Write(" ");
+                    System.Threading.Thread.Sleep(60 * 1000);
                 }
                 ms.Persistence();
             }

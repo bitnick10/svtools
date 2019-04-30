@@ -12,7 +12,7 @@ namespace MemStore
         public string RAMDBName;
         public string HDDBName;
 
-        string ServerIP = "192.168.0.170";
+        string ServerIP = "192.168.0.171";
 
         public List<string> AllTableNames()
         {
